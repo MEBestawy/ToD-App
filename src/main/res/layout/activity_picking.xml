@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ToDPicking">
+
+    <TextView
+        android:id="@+id/truthChoice"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="#3793EF"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="TRUTH"
+        android:textColor="#FFFFFF"
+        android:textSize="100sp"
+        app:fontFamily="@font/oneday"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.5"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/dareChoice"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="#FF740F"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="DARE"
+        android:textColor="#FFFFFF"
+        android:textSize="100sp"
+        app:fontFamily="@font/oneday"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.5"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/orTextView"
+        android:layout_width="105dp"
+        android:layout_height="75dp"
+        android:background="#00FF740F"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="OR"
+        android:textColor="#38EB8B"
+        android:textSize="50sp"
+        app:fontFamily="@font/oneday"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.50"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/truthChoice" />
+</androidx.constraintlayout.widget.ConstraintLayout>

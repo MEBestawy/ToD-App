@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#38EB8B"
+    tools:context=".TruthOrDarePresentation">
+
+    <TextView
+        android:id="@+id/choiceTitle"
+        android:layout_width="281dp"
+        android:layout_height="93dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:gravity="center_horizontal|center_vertical"
+        android:textColor="#FFFFFF"
+        android:textSize="55sp"
+        app:fontFamily="@font/oneday"
+        app:layout_constraintEnd_toStartOf="@+id/guideline"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/choiceDesc"
+        android:layout_width="348dp"
+        android:layout_height="442dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:gravity="top|left"
+        android:textColor="#FFFFFF"
+        android:textSize="35sp"
+        app:fontFamily="@font/helveticaneue"
+        app:layout_constraintBottom_toTopOf="@+id/nextRoundButton"
+        app:layout_constraintEnd_toStartOf="@+id/guideline"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toBottomOf="@+id/choiceTitle"
+        app:layout_constraintVertical_bias="0.21" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.93" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.08272506" />
+
+    <Button
+        android:id="@+id/nextRoundButton"
+        android:layout_width="179dp"
+        android:layout_height="90dp"
+        android:layout_marginBottom="48dp"
+        android:background="#FFFFFF"
+        android:onClick="goToNextRound"
+        android:text="NEXT ROUND"
+        android:textColor="#35E274"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
