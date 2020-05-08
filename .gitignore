@@ -1,1 +1,8 @@
+# Ignoring DN_Store files
 .DS_Store
+
+#Ignore all kind of files
+*.*
+
+#Don't ignore java files
+!*.java
