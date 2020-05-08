@@ -1,8 +1,5 @@
 # Ignoring DN_Store files
 .DS_Store
 
-#Ignore all files
-*
-
 #Don't ignore java files
-!*.java
+!/app/src/main/java/com/d2/**.java
