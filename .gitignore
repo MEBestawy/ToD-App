@@ -2,4 +2,5 @@
 .DS_Store
 
 #Don't ignore java files
+*
 !/app/src/main/java/com/d2/**.java
